@@ -1,0 +1,149 @@
+# 🚀 Dockerized Application Deployment with CI/CD on AWS
+
+## 📌 Project Overview
+
+This project demonstrates a complete **DevOps CI/CD pipeline** for deploying a Dockerized application on AWS. It automates the process from **code commit to production deployment** using industry-standard DevOps tools and practices.
+
+The pipeline includes:
+
+* Source Code Management using GitHub
+* Continuous Integration using Jenkins
+* Containerization using Docker
+* Image Registry using DockerHub
+* Deployment on AWS EC2
+
+---
+
+## 🧱 Tech Stack
+
+* **Cloud Provider:** AWS
+* **CI/CD Tool:** Jenkins
+* **Containerization:** Docker
+* **Container Registry:** DockerHub
+* **Version Control:** GitHub
+* **OS:** Amazon Linux
+
+---
+
+## 🏗 Architecture Flow
+
+```text
+Developer → GitHub → Jenkins → Docker Build → DockerHub → AWS EC2 → Application Live
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+DevOps-CI-CD-project/
+│
+├── Dockerfile
+├── Jenkinsfile
+├── app.py / index.html
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## ⚙ CI/CD Pipeline Stages
+
+1. Clone source code from GitHub
+2. Build Docker image
+3. Push Docker image to DockerHub
+4. Deploy Docker container on AWS EC2
+
+---
+
+## 🧪 Jenkins Pipeline Flow
+
+* SCM Checkout
+* Docker Image Build
+* Docker Image Push
+* Container Deployment
+
+---
+
+## 🐳 Docker Workflow
+
+```bash
+# Build Image
+docker build -t devops-app .
+
+# Tag Image
+docker tag devops-app username/devops-app
+
+# Push to DockerHub
+docker push username/devops-app
+
+# Run Container
+docker run -d -p 80:80 username/devops-app
+```
+
+---
+
+## 🔐 Jenkins Credentials
+
+* DockerHub Username
+* DockerHub Password
+* GitHub Access Token
+
+---
+
+## 🌐 Deployment
+
+The Docker container is deployed on an **AWS EC2 instance**, and the application is accessed via:
+
+```
+http://<EC2_PUBLIC_IP>
+```
+
+---
+
+## 🎯 Project Objectives
+
+* Automate application deployment
+* Implement CI/CD pipeline
+* Practice DevOps workflows
+* Learn Docker containerization
+* Learn AWS deployment
+
+---
+
+## 📄 Resume Description (ATS Friendly)
+
+* Implemented CI/CD pipeline using Jenkins for automated Dockerized application deployment on AWS.
+* Built and pushed Docker images to DockerHub and deployed containers on AWS EC2.
+* Automated build, test, and deployment workflow using DevOps best practices.
+
+---
+
+## 🎤 Interview Explanation
+
+"I built a CI/CD pipeline using Jenkins where application code is containerized using Docker, pushed to DockerHub, and automatically deployed on AWS EC2. This project demonstrates end-to-end DevOps automation."
+
+---
+
+## 🔮 Future Enhancements
+
+* Kubernetes deployment
+* Terraform infrastructure provisioning
+* AWS ECR integration
+* Load balancer integration
+* Auto Scaling
+* Blue-Green deployment
+* Monitoring with Prometheus & Grafana
+
+---
+
+## 👨‍💻 Author
+
+**G Basavaraj Gouda**
+
+---
+
+## ⭐ GitHub
+
+If you find this project useful, please ⭐ the repository to support the work!
+
